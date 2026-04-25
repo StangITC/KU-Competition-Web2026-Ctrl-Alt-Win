@@ -800,4 +800,154 @@
     padding: 0 !important;
     box-shadow: none !important;
   }
+
+  .home-page-thq-section-promotional-banner-elm {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    min-height: 416px !important;
+    padding: 39.85px 39.8485px 39.841px 48px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    border-radius: 24px !important;
+    gap: 199.84px !important;
+    isolation: isolate !important;
+    background: #b61b4a !important;
+    box-shadow: none !important;
+  }
+
+  .home-page-thq-container-elm47 {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: auto !important;
+    height: auto !important;
+    opacity: 0.26 !important;
+    z-index: 0 !important;
+    object-fit: fill !important;
+    pointer-events: none !important;
+    transform: none !important;
+  }
+
+  .home-page-thq-container-elm48 {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    z-index: 1 !important;
+    width: 537.72px !important;
+    max-width: 576px !important;
+    min-width: 0 !important;
+    gap: 16px !important;
+    padding-top: 18px !important;
+    flex: none !important;
+  }
+
+  .home-page-thq-heading2-elm2 {
+    width: 537.72px !important;
+    height: 96px !important;
+    align-self: stretch !important;
+  }
+
+  .home-page-thq-container-elm49 {
+    width: 537.72px !important;
+    height: 56px !important;
+    align-self: stretch !important;
+  }
+
+  .home-page-thq-text-elm65 {
+    width: 486.44px !important;
+    max-width: none !important;
+    font-size: 48px !important;
+    line-height: 48px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .home-page-thq-text-elm68 {
+    width: 537.72px !important;
+    max-width: none !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .home-page-thq-container-elm50 {
+    width: 537.72px !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    padding: 16px 0 0 !important;
+  }
+
+  .home-page-thq-button-elm2 {
+    width: 182.59px !important;
+    min-width: 182.59px !important;
+    height: 56px !important;
+    min-height: 56px !important;
+    padding: 13.5px 32px 14.5px !important;
+    border-radius: 12px !important;
+  }
+
+  .home-page-thq-button-elm3 {
+    width: 219.05px !important;
+    min-width: 219.05px !important;
+    height: 56px !important;
+    min-height: 56px !important;
+    padding: 12px 32px !important;
+    border-radius: 12px !important;
+    border-width: 2px !important;
+  }
+
+  .home-page-thq-text-elm71,
+  .home-page-thq-text-elm72 {
+    width: auto !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    font-weight: 700 !important;
+  }
+
+  .home-page-thq-overlay-shadowcsstransform-elm {
+    display: flex !important;
+    position: relative !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    z-index: 2 !important;
+    width: 336.31px !important;
+    height: 336.31px !important;
+    min-width: 336.31px !important;
+    min-height: 336.31px !important;
+    padding: 0 0 0 0 !important;
+    flex: 0 0 auto !important;
+    align-self: flex-start !important;
+    margin: 16px 8px 0 0 !important;
+  }
+
+  .home-page-thq-overlay-shadow-elm {
+    width: 320px !important;
+    height: 320px !important;
+    min-width: 320px !important;
+    min-height: 320px !important;
+    border-radius: 18px !important;
+    background: rgba(255, 255, 255, 0.002) !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    overflow: hidden !important;
+    transform: rotate(3deg) translateY(0) !important;
+  }
+
+  .home-page-thq-image-elm6 {
+    width: 320px !important;
+    height: 320px !important;
+    object-fit: cover !important;
+    transform: rotate(0deg) !important;
+  }
 }

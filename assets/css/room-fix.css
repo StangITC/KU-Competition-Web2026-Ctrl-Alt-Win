@@ -86,12 +86,13 @@ body { background: #f8f9fa; margin: 0; }
 /* === IMAGE GALLERY === */
 .room-detail-thq-image-gallery-elm {
   display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr !important;
-  grid-template-rows: auto auto !important;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr) !important;
+  grid-template-rows: repeat(2, minmax(0, 190px)) !important;
   gap: 16px !important;
   width: 100% !important;
-  height: auto !important;
+  height: 396px !important;
   padding: 0 !important;
+  align-items: stretch !important;
 }
 
 .room-detail-thq-container-elm118 {
@@ -99,13 +100,14 @@ body { background: #f8f9fa; margin: 0; }
   grid-row: 1 / 3 !important;
   border-radius: 12px !important;
   overflow: hidden !important;
-  min-height: 500px !important;
+  height: 396px !important;
+  min-height: 396px !important;
 }
 
 .room-detail-thq-ab6a-xu-c-yw-m4p-xnq-st-fm-z-lgse-g8zz-obe-h-ll3tnw0q6h25-es-h-kwm-elm {
   width: 100% !important;
   height: 100% !important;
-  min-height: 500px !important;
+  min-height: 396px !important;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -116,7 +118,8 @@ body { background: #f8f9fa; margin: 0; }
 .room-detail-thq-container-elm122 {
   border-radius: 12px !important;
   overflow: hidden !important;
-  min-height: 240px !important;
+  height: 190px !important;
+  min-height: 190px !important;
 }
 
 .room-detail-thq-ab6a-xu-dl-axyx-f-xh-re-hgnndr-etfi-mv3g-fh-k-lj-jza-xc-rsg4ycg8b-elm,
@@ -125,7 +128,7 @@ body { background: #f8f9fa; margin: 0; }
 .room-detail-thq-ab6a-xu-ba-j-qej-scb-iii5in-bt-gry5h-a6vo-ta1uyk0e-dchpx1wb-xt-elm {
   width: 100% !important;
   height: 100% !important;
-  min-height: 240px !important;
+  min-height: 190px !important;
   background-size: cover !important;
   background-position: center !important;
 }
@@ -185,6 +188,22 @@ body { background: #f8f9fa; margin: 0; }
   cursor: pointer;
   background: none;
   border: none;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  white-space: nowrap !important;
+  width: auto !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.room-detail-thq-button-elm13 .room-detail-thq-text-elm126,
+.room-detail-thq-button-elm13 .room-detail-thq-text-elm127,
+.room-detail-thq-button-elm13 .room-detail-thq-text-elm128,
+.room-detail-thq-button-elm13 .room-detail-thq-text-elm129,
+.room-detail-thq-button-elm13 span {
+  white-space: nowrap !important;
 }
 
 /* Right Side */
@@ -374,6 +393,11 @@ body { background: #f8f9fa; margin: 0; }
   width: 100% !important;
 }
 
+.room-detail-thq-text-elm179,
+.room-detail-thq-text-elm180 {
+  white-space: nowrap !important;
+}
+
 .room-detail-thq-container-elm205 {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -410,6 +434,13 @@ body { background: #f8f9fa; margin: 0; }
   cursor: pointer;
   background: none;
   border: none;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  width: auto !important;
+  max-width: 100% !important;
+  padding: 0 !important;
 }
 
 /* Review avatars */
@@ -454,11 +485,14 @@ body { background: #f8f9fa; margin: 0; }
   /* Image gallery: 3col → 1 main + 2×2 */
   .room-detail-thq-image-gallery-elm {
     grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto auto !important;
+    height: auto !important;
   }
   .room-detail-thq-container-elm118 {
     grid-column: 1 / 3 !important;
     grid-row: 1 / 2 !important;
     min-height: 260px !important;
+    height: 260px !important;
   }
   .room-detail-thq-ab6a-xu-c-yw-m4p-xnq-st-fm-z-lgse-g8zz-obe-h-ll3tnw0q6h25-es-h-kwm-elm {
     min-height: 260px !important;
@@ -468,6 +502,7 @@ body { background: #f8f9fa; margin: 0; }
   .room-detail-thq-container-elm121,
   .room-detail-thq-container-elm122 {
     min-height: 140px !important;
+    height: 140px !important;
   }
 
   /* Main content: 2col → 1col (booking widget first) */
