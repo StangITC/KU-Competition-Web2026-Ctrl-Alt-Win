@@ -805,14 +805,14 @@
     position: relative !important;
     display: flex !important;
     flex-direction: row !important;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
     align-items: flex-start !important;
     min-height: 416px !important;
     padding: 39.85px 39.8485px 39.841px 48px !important;
     margin: 0 !important;
     overflow: hidden !important;
     border-radius: 24px !important;
-    gap: 199.84px !important;
+    gap: 112px !important;
     isolation: isolate !important;
     background: #b61b4a !important;
     box-shadow: none !important;
@@ -849,13 +849,13 @@
 
   .home-page-thq-heading2-elm2 {
     width: 537.72px !important;
-    height: 96px !important;
+    height: auto !important;
     align-self: stretch !important;
   }
 
   .home-page-thq-container-elm49 {
     width: 537.72px !important;
-    height: 56px !important;
+    height: auto !important;
     align-self: stretch !important;
   }
 
@@ -866,8 +866,7 @@
     line-height: 48px !important;
     font-weight: 900 !important;
     letter-spacing: 0 !important;
-    display: flex !important;
-    align-items: center !important;
+    display: block !important;
   }
 
   .home-page-thq-text-elm68 {
@@ -876,8 +875,7 @@
     font-size: 18px !important;
     line-height: 28px !important;
     color: rgba(255, 255, 255, 0.8) !important;
-    display: flex !important;
-    align-items: center !important;
+    display: block !important;
   }
 
   .home-page-thq-container-elm50 {
@@ -929,7 +927,7 @@
     padding: 0 0 0 0 !important;
     flex: 0 0 auto !important;
     align-self: flex-start !important;
-    margin: 16px 8px 0 0 !important;
+    margin: 16px 8px 0 auto !important;
   }
 
   .home-page-thq-overlay-shadow-elm {
