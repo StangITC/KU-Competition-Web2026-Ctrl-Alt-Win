@@ -269,6 +269,116 @@ const initializeSearchSummaryMockup = () => {
   });
 };
 
+const initializeSearchFiltersMockup = () => {
+  const filterPanel = document.querySelector(
+    ".search-result-thq-background-border-shadow-elm"
+  );
+
+  if (!filterPanel) {
+    return;
+  }
+
+  const optionSelectors = [
+    ".search-result-thq-label-elm12",
+    ".search-result-thq-label-elm13",
+    ".search-result-thq-label-elm14",
+    ".search-result-thq-label-elm15",
+    ".search-result-thq-label-elm17",
+    ".search-result-thq-label-elm18",
+    ".search-result-thq-label-elm20",
+    ".search-result-thq-label-elm21",
+    ".search-result-thq-label-elm22",
+    ".search-result-thq-label-elm23",
+    ".search-result-thq-label-elm24",
+    ".search-result-thq-label-elm25",
+    ".search-result-thq-label-elm27",
+    ".search-result-thq-label-elm28",
+    ".search-result-thq-label-elm29",
+    ".search-result-thq-label-elm31",
+    ".search-result-thq-label-elm32",
+    ".search-result-thq-label-elm33",
+    ".search-result-thq-label-elm34",
+    ".search-result-thq-label-elm36",
+    ".search-result-thq-label-elm37",
+    ".search-result-thq-label-elm38",
+  ];
+
+  optionSelectors.forEach((selector) => {
+    filterPanel.querySelectorAll(selector).forEach((option, index) => {
+      option.classList.add("search-result-thq-filter-option");
+
+      if (option.querySelector(".search-result-thq-filter-checkbox")) {
+        return;
+      }
+
+      const legacyImage = option.querySelector('img[class*="search-result-thq-input-elm"]');
+      if (legacyImage) {
+        legacyImage.classList.add("search-result-thq-filter-input-image");
+      }
+
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.className = "search-result-thq-filter-checkbox";
+      checkbox.tabIndex = 0;
+
+      // Preserve a bit of visual intent from the exported mockup.
+      if (
+        selector === ".search-result-thq-label-elm12" ||
+        selector === ".search-result-thq-label-elm17"
+      ) {
+        checkbox.checked = true;
+      }
+
+      option.insertBefore(checkbox, option.firstChild);
+      option.addEventListener("click", (event) => {
+        if (event.target === checkbox) {
+          return;
+        }
+
+        checkbox.checked = !checkbox.checked;
+      });
+
+      option.dataset.filterIndex = String(index);
+    });
+  });
+
+  const priceTrack = filterPanel.querySelector(".search-result-thq-input-elm10");
+  const leftPrice = filterPanel.querySelector(".search-result-thq-text-elm109");
+  const rightPrice = filterPanel.querySelector(".search-result-thq-text-elm110");
+  const legacyThumb = filterPanel.querySelector(".search-result-thq-container-elm115");
+
+  if (priceTrack && !priceTrack.querySelector(".search-result-thq-price-slider")) {
+    if (legacyThumb) {
+      legacyThumb.style.display = "none";
+    }
+
+    const slider = document.createElement("input");
+    slider.type = "range";
+    slider.min = "0";
+    slider.max = "1000";
+    slider.value = "1000";
+    slider.className = "search-result-thq-price-slider";
+
+    const updateSlider = () => {
+      const current = Number(slider.value);
+      const fill = (current / 1000) * 100;
+      slider.style.background = `linear-gradient(90deg, #2563eb 0%, #2563eb ${fill}%, #e1e2eb ${fill}%, #e1e2eb 100%)`;
+
+      if (leftPrice) {
+        leftPrice.textContent = "$0";
+      }
+
+      if (rightPrice) {
+        rightPrice.textContent = current >= 1000 ? "$1000+" : `$${current}`;
+      }
+    };
+
+    slider.addEventListener("input", updateSlider);
+    updateSlider();
+    priceTrack.appendChild(slider);
+  }
+};
+
 const initializeHomeSearchMockup = () => {
   const searchBar = document.querySelector(".home-page-thq-search-bar-integrated-elm");
   const panel = document.querySelector(".home-page-thq-search-summary-popover");
@@ -399,6 +509,32 @@ const initializeHomeSearchMockup = () => {
   });
 };
 
+const initializeTrendingDestinationsLinks = () => {
+  const trendingContainer = document.querySelector(".home-page-thq-container-elm37");
+
+  if (!trendingContainer) {
+    return;
+  }
+
+  const cardSelectors = [
+    ".home-page-thq-bangkok-elm",
+    ".home-page-thq-tokyo-elm",
+    ".home-page-thq-paris-elm",
+    ".home-page-thq-london-elm",
+  ].join(", ");
+
+  trendingContainer.addEventListener("click", (event) => {
+    const card = event.target.closest(cardSelectors);
+
+    if (!card) {
+      return;
+    }
+
+    event.preventDefault();
+    navigate(routes.search);
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const isHomePage = document.querySelector(".home-page-container1");
   const isSearchResults = document.querySelector(".search-result-container1");
@@ -406,14 +542,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (isHomePage) {
     initializeHomeSearchMockup();
+    initializeTrendingDestinationsLinks();
 
     bindClick(
       [
         ".home-page-thq-link-elm19",
-        ".home-page-thq-bangkok-elm",
-        ".home-page-thq-tokyo-elm",
-        ".home-page-thq-paris-elm",
-        ".home-page-thq-london-elm",
         ".home-page-thq-button-elm2",
         ".home-page-thq-button-elm3",
       ],
@@ -440,6 +573,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isSearchResults) {
     initializeCountdown();
     initializeSearchSummaryMockup();
+    initializeSearchFiltersMockup();
 
     bindClick(
       [
