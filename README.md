@@ -1,5 +1,3 @@
-### สรุปโครงการ (Project Overview)
-
 # KU‑Competition‑Web2026 – Team Ctrl‑Alt‑Win
 เป็นเว็บแอปพลิเคชันแบบ Static ที่สร้างด้วย HTML, CSS, JavaScript (ไม่มีฟรมเวิร์ก) เพื่อเป็นตัวอย่างการทำระบบจองที่พัก/ท่องเที่ยวของการแข่งขัน KU Competition 2026
 
