@@ -931,21 +931,29 @@
   }
 
   .home-page-thq-overlay-shadow-elm {
-    width: 320px !important;
-    height: 320px !important;
-    min-width: 320px !important;
-    min-height: 320px !important;
-    border-radius: 18px !important;
-    background: rgba(255, 255, 255, 0.002) !important;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    width: 319.9998474121094px !important;
+    height: 319.9998474121094px !important;
+    min-width: 319.9998474121094px !important;
+    min-height: 319.9998474121094px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    border-radius: 16px !important;
+    background-color: rgba(255, 255, 255, 0.0020000000949949026) !important;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
     overflow: hidden !important;
-    transform: rotate(3deg) translateY(0) !important;
+    transform: rotate(3deg) !important;
   }
 
   .home-page-thq-image-elm6 {
-    width: 320px !important;
-    height: 320px !important;
+    width: auto !important;
+    height: auto !important;
+    flex-grow: 1 !important;
+    align-self: stretch !important;
     object-fit: cover !important;
+    border-radius: 16px !important;
     transform: rotate(0deg) !important;
   }
 }
