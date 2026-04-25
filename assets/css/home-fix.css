@@ -1,0 +1,665 @@
+/* ===== HOME PAGE LAYOUT FIX ===== */
+/* Old nav and footer hidden — replaced by shared-layout.js */
+
+.home-page-thq-header-top-navigation-bar-elm { display: none !important; }
+.home-page-thq-footer-elm { display: none !important; }
+
+/* Remove decorative search bar shadow */
+.home-page-thq-search-bar-integratedshadow-elm { display: none !important; }
+
+.home-page-thq-link-elm19,
+.home-page-thq-text-elm47 {
+  width: auto !important;
+  white-space: nowrap !important;
+}
+
+.home-page-thq-bangkok-elm,
+.home-page-thq-tokyo-elm,
+.home-page-thq-paris-elm,
+.home-page-thq-london-elm {
+  cursor: pointer !important;
+  transition: transform 0.18s ease, filter 0.18s ease !important;
+}
+
+.home-page-thq-bangkok-elm:hover,
+.home-page-thq-tokyo-elm:hover,
+.home-page-thq-paris-elm:hover,
+.home-page-thq-london-elm:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.03);
+}
+
+.home-page-thq-text-elm49,
+.home-page-thq-text-elm54,
+.home-page-thq-text-elm58,
+.home-page-thq-text-elm62 {
+  color: rgba(66, 71, 83, 1) !important;
+}
+
+.home-page-thq-text-elm49 > span:last-child,
+.home-page-thq-text-elm54 > span:last-child,
+.home-page-thq-text-elm58 > span:last-child,
+.home-page-thq-text-elm62 > span:last-child,
+.home-page-thq-text-elm50,
+.home-page-thq-text-elm55,
+.home-page-thq-text-elm59,
+.home-page-thq-text-elm63 {
+  color: rgba(0, 92, 189, 1) !important;
+}
+
+.home-page-thq-text-elm50,
+.home-page-thq-text-elm55,
+.home-page-thq-text-elm59,
+.home-page-thq-text-elm63 {
+  color: rgba(66, 71, 83, 1) !important;
+}
+
+.home-page-thq-rich-hero-section-elm,
+.home-page-thq-container-elm21 {
+  overflow: visible !important;
+}
+
+.home-page-thq-search-bar-integrated-elm {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.home-page-thq-background-border-elm1,
+.home-page-thq-background-border-elm2 {
+  cursor: pointer !important;
+}
+
+.home-page-thq-background-border-elm1:focus-visible,
+.home-page-thq-background-border-elm2:focus-visible,
+.home-page-thq-background-border-elm1:hover,
+.home-page-thq-background-border-elm2:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+  border-radius: 14px;
+}
+
+.home-page-thq-search-summary-popover {
+  position: static;
+  width: 100%;
+  margin-top: 16px;
+  z-index: 6;
+}
+
+.home-page-thq-search-summary-panel {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 24px;
+  box-shadow: 0 28px 56px rgba(15, 23, 42, 0.18);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(18px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-page-thq-search-summary-header,
+.home-page-thq-search-summary-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.home-page-thq-search-summary-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-page-thq-search-summary-kicker {
+  color: rgba(0, 92, 189, 1);
+  font: 700 12px/16px "Plus Jakarta Sans", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-page-thq-search-summary-title {
+  color: rgba(15, 23, 42, 1);
+  font: 700 24px/32px "Plus Jakarta Sans", sans-serif;
+}
+
+.home-page-thq-search-summary-close,
+.home-page-thq-search-summary-reset {
+  border: 1px solid rgba(226, 232, 240, 1);
+  border-radius: 999px;
+  background: #fff;
+  color: rgba(15, 23, 42, 1);
+  padding: 10px 16px;
+  font: 600 14px/20px "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+}
+
+.home-page-thq-search-summary-form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.home-page-thq-search-summary-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home-page-thq-search-summary-label {
+  color: rgba(71, 85, 105, 1);
+  font: 600 13px/18px "Plus Jakarta Sans", sans-serif;
+}
+
+.home-page-thq-search-summary-input {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid rgba(226, 232, 240, 1);
+  border-radius: 14px;
+  background: rgba(248, 250, 252, 1);
+  box-sizing: border-box;
+  padding: 0 14px;
+  color: rgba(15, 23, 42, 1);
+  font: 600 15px/22px "Plus Jakarta Sans", sans-serif;
+}
+
+.home-page-thq-search-summary-input:focus {
+  outline: 2px solid rgba(37, 99, 235, 0.18);
+  border-color: rgba(37, 99, 235, 1);
+}
+
+.home-page-thq-search-summary-apply {
+  position: relative;
+  min-width: 170px;
+  min-height: 50px;
+  border: none;
+  border-radius: 14px;
+  background: rgba(0, 92, 189, 1);
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.home-page-thq-search-summary-apply-shadow {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.home-page-thq-search-summary-apply span {
+  position: relative;
+  z-index: 1;
+  font: 700 15px/22px "Plus Jakarta Sans", sans-serif;
+}
+
+/* ═════════════════════════════════════════
+   DESKTOP FIXES (≥769px)
+   ═════════════════════════════════════════ */
+
+/* ═════════════════════════════════════════
+   MOBILE RESPONSIVE  ≤768px
+   ═════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* ── GLOBAL FIGMA RESET ── */
+  [class*="home-page-thq-"] {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    max-width: 100% !important;
+    transform: none !important;
+    flex-shrink: 1 !important;
+    box-sizing: border-box !important;
+  }
+  [class*="-text-elm"], 
+  [class*="-heading"] {
+    width: auto !important;
+    height: auto !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    line-height: 1.4 !important;
+  }
+  :where(div)[class*="-container"], 
+  :where(div)[class*="-background"],
+  :where(div)[class*="-section"] {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  /* Adjust huge fonts for mobile */
+  .home-page-thq-text-elm24 { font-size: 40px !important; line-height: 1.2 !important; }
+  .home-page-thq-text-elm45 { font-size: 28px !important; }
+  .home-page-thq-text-elm65 { font-size: 32px !important; }
+
+  /* ── Page wrapper: fixed 1280px → fluid ── */
+  .home-page-thq-home-page-elm {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    position: static !important;
+    background-color: #f8fafc !important; /* light gray app background */
+  }
+
+  .home-page-thq-main-elm {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  /* ── HERO ── */
+  .home-page-thq-rich-hero-section-elm {
+    position: relative !important;
+    top: auto !important; left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 480px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    border-bottom-left-radius: 32px !important;
+    border-bottom-right-radius: 32px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+  }
+  .home-page-thq-container-elm20 {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important; height: 100% !important;
+    overflow: hidden !important;
+  }
+  .home-page-thq-image-elm1 {
+    position: absolute !important;
+    top: 0 !important; left: 0 !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important;
+  }
+  .home-page-thq-gradient-elm {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important; height: 100% !important;
+    object-fit: cover !important;
+    z-index: 1 !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%) !important;
+  }
+  .home-page-thq-container-elm21 {
+    position: relative !important;
+    z-index: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 64px 20px 32px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    text-align: center !important;
+  }
+  /* Search bar → App-like floating card */
+  .home-page-thq-search-bar-integrated-elm {
+    position: static !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 16px !important;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
+    border: 1px solid rgba(255,255,255,0.6) !important;
+  }
+  .home-page-thq-background-border-elm1,
+  .home-page-thq-background-border-elm2 {
+    width: 100% !important;
+    background: white !important;
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  .home-page-thq-button-elm1 {
+    width: 100% !important;
+    justify-content: center !important;
+    border-radius: 12px !important;
+    padding: 14px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+  }
+  .home-page-thq-button-elm1:active {
+    transform: scale(0.98) !important;
+  }
+
+  /* ── WHY CHOOSE US ── */
+  .home-page-thq-section-why-choose-us-elm {
+    position: static !important;
+    top: auto !important; left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 32px 20px !important;
+  }
+  /* App-like cards for why choose us */
+  .home-page-thq-container-elm23,
+  .home-page-thq-container-elm26,
+  .home-page-thq-container-elm29,
+  .home-page-thq-container-elm32 {
+    background: white !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
+    border: 1px solid #f1f5f9 !important;
+  }
+
+  /* ── TRENDING DESTINATIONS (Horizontal Scroll) ── */
+  .home-page-thq-section-trending-destinations-elm {
+    position: static !important;
+    top: auto !important; left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 32px 0 32px 20px !important; /* Left padding only for scroll entry */
+    gap: 20px !important;
+    overflow: hidden !important;
+  }
+  .home-page-thq-container-elm34 {
+    gap: 0 !important;
+    justify-content: space-between !important;
+    margin-bottom: 16px !important;
+    padding-right: 20px !important;
+  }
+  /* The scroll container */
+  .home-page-thq-container-elm37 {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 16px !important;
+    padding-bottom: 24px !important; /* Shadow bleed */
+    padding-right: 20px !important;
+    -webkit-overflow-scrolling: touch !important;
+    width: 100% !important;
+  }
+  .home-page-thq-container-elm37::-webkit-scrollbar {
+    display: none !important;
+  }
+  /* Cards: horizontal scroll items */
+  .home-page-thq-bangkok-elm,
+  .home-page-thq-tokyo-elm,
+  .home-page-thq-paris-elm,
+  .home-page-thq-london-elm {
+    position: relative !important;
+    scroll-snap-align: start !important;
+    flex: 0 0 75% !important; /* Peek at next item */
+    height: auto !important;
+    min-height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background: white !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06) !important;
+    padding-bottom: 16px !important;
+    transition: transform 0.2s ease !important;
+  }
+  .home-page-thq-bangkok-elm:active,
+  .home-page-thq-tokyo-elm:active,
+  .home-page-thq-paris-elm:active,
+  .home-page-thq-london-elm:active {
+    transform: scale(0.98) !important;
+  }
+
+  .home-page-thq-container-elm39,
+  .home-page-thq-container-elm42,
+  .home-page-thq-container-elm44,
+  .home-page-thq-container-elm46 {
+    position: static !important;
+    top: auto !important; left: auto !important;
+    width: 100% !important;
+    height: 180px !important;
+    overflow: hidden !important;
+    border-radius: 16px 16px 0 0 !important;
+    order: 0 !important;
+  }
+  .home-page-thq-image-elm2,
+  .home-page-thq-image-elm3,
+  .home-page-thq-image-elm4,
+  .home-page-thq-image-elm5 {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    align-self: stretch !important;
+  }
+  .home-page-thq-container-elm40 {
+    position: absolute !important;
+    top: 12px !important;
+    bottom: auto !important; left: 12px !important;
+    background: rgba(255,255,255,0.9) !important;
+    backdrop-filter: blur(8px) !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  }
+  .home-page-thq-heading4-elm4,
+  .home-page-thq-heading4-elm5,
+  .home-page-thq-heading4-elm6,
+  .home-page-thq-heading4-elm7 {
+    position: static !important;
+    top: auto !important; left: auto !important;
+    width: 100% !important;
+    padding: 16px 16px 4px !important;
+    order: 1 !important;
+  }
+  .home-page-thq-text-elm48,
+  .home-page-thq-text-elm53,
+  .home-page-thq-text-elm57,
+  .home-page-thq-text-elm61 { width: auto !important; }
+  .home-page-thq-container-elm38,
+  .home-page-thq-container-elm41,
+  .home-page-thq-container-elm43,
+  .home-page-thq-container-elm45 {
+    position: static !important;
+    top: auto !important; left: auto !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+    order: 2 !important;
+  }
+
+  /* ── PROMOTIONAL BANNER ── */
+  .home-page-thq-section-promotional-banner-elm {
+    position: static !important;
+    top: auto !important; left: auto !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 20px 32px !important;
+    padding: 40px 24px !important;
+    gap: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    overflow: hidden !important;
+    border-radius: 24px !important;
+    box-shadow: 0 12px 32px rgba(37, 99, 235, 0.15) !important;
+  }
+  .home-page-thq-overlay-shadowcsstransform-elm { display: none !important; }
+  .home-page-thq-container-elm48 {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    z-index: 1 !important;
+  }
+  .home-page-thq-heading2-elm2 { width: auto !important; }
+  .home-page-thq-container-elm50 {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .home-page-thq-button-elm2,
+  .home-page-thq-button-elm3 {
+    width: 100% !important;
+    justify-content: center !important;
+    border-radius: 12px !important;
+    padding: 14px !important;
+    font-weight: 700 !important;
+  }
+  .home-page-thq-button-elm2:active,
+  .home-page-thq-button-elm3:active {
+    transform: scale(0.98) !important;
+  }
+
+  /* ── NEWSLETTER ── */
+  .home-page-thq-section-newsletter-subscription-elm {
+    position: static !important;
+    top: auto !important; left: auto !important;
+    width: auto !important;
+    margin: 0 20px 32px !important;
+    padding: 40px 24px !important;
+    border-radius: 24px !important;
+    background: white !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05) !important;
+  }
+  .home-page-thq-container-elm51 { width: 100% !important; }
+  .home-page-thq-form-elm {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .home-page-thq-input-elm3 {
+    border-radius: 12px !important;
+    padding: 14px 16px !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+  .home-page-thq-button-elm4 {
+    width: 100% !important;
+    flex: none !important;
+    justify-content: center !important;
+    border-radius: 12px !important;
+    padding: 14px !important;
+    font-weight: 700 !important;
+  }
+  .home-page-thq-button-elm4:active {
+    transform: scale(0.98) !important;
+  }
+}
+
+/* ≤480px — further tweaks if necessary */
+@media (max-width: 480px) {
+  .home-page-thq-container-elm37 {
+    /* Keep horizontal scroll, but adjust peek size */
+  }
+  .home-page-thq-bangkok-elm,
+  .home-page-thq-tokyo-elm,
+  .home-page-thq-paris-elm,
+  .home-page-thq-london-elm {
+    flex: 0 0 85% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page-thq-search-summary-panel {
+    padding: 18px;
+  }
+
+  .home-page-thq-search-summary-header,
+  .home-page-thq-search-summary-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-page-thq-search-summary-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page-thq-search-summary-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .home-page-thq-home-page-elm {
+    width: 100% !important;
+    max-width: 1280px !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    position: static !important;
+  }
+
+  .home-page-thq-main-elm {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 40px !important;
+    box-sizing: border-box !important;
+  }
+
+  .home-page-thq-rich-hero-section-elm {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 520px !important;
+    padding: 72px 16px 40px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .home-page-thq-container-elm20 {
+    position: absolute !important;
+    inset: 0 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .home-page-thq-container-elm21 {
+    position: relative !important;
+    inset: auto !important;
+    width: 768px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    justify-content: flex-start !important;
+  }
+
+  .home-page-thq-section-why-choose-us-elm {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    column-gap: 20px !important;
+    padding: 0 !important;
+  }
+
+  .home-page-thq-section-trending-destinations-elm,
+  .home-page-thq-section-promotional-banner-elm,
+  .home-page-thq-section-newsletter-subscription-elm {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+  }
+}

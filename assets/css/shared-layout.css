@@ -1,0 +1,361 @@
+/* ===== SHARED LAYOUT — Navbar & Footer ===== */
+/* Matches the Figma export design tokens exactly */
+
+/* ── NAVBAR ── */
+#shared-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(226, 232, 240, 1);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+.shared-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  padding: 0 24px;
+  height: 56px;
+}
+
+.shared-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.shared-nav-logo {
+  color: rgba(37, 99, 235, 1);
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 32px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.shared-nav-logo:hover {
+  opacity: 0.85;
+}
+
+.shared-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.shared-nav-link {
+  color: rgba(71, 85, 105, 1);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 20px;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.shared-nav-link:hover {
+  color: rgba(37, 99, 235, 1);
+}
+.shared-nav-link.active {
+  color: rgba(37, 99, 235, 1);
+  border-bottom: 2px solid rgba(37, 99, 235, 1);
+}
+
+.shared-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.shared-btn-signin {
+  color: rgba(71, 85, 105, 1);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 20px;
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+.shared-btn-signin:hover {
+  color: rgba(37, 99, 235, 1);
+}
+
+.shared-btn-create {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 20px;
+  background-color: rgba(0, 92, 189, 1);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  white-space: nowrap;
+}
+.shared-btn-create:hover {
+  background-color: rgba(0, 75, 155, 1);
+}
+
+/* ── FOOTER ── */
+#shared-footer {
+  background-color: rgba(248, 250, 252, 1);
+  border-top: 1px solid rgba(226, 232, 240, 1);
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+.shared-footer-inner {
+  display: flex;
+  align-items: flex-start;
+  padding: 48px 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Left brand column — matches 600px from Figma */
+.shared-footer-brand {
+  gap: 16px;
+  width: 600px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.shared-footer-logo {
+  color: rgba(15, 23, 42, 1);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 28px;
+}
+
+.shared-footer-desc {
+  color: rgba(100, 116, 139, 1);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 20px;
+  margin: 0;
+  max-width: 384px;
+}
+
+.shared-footer-copy {
+  color: rgba(100, 116, 139, 1);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 8px;
+}
+
+/* Social icons row */
+.shared-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.shared-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: rgba(71, 85, 105, 1);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.shared-social-link:hover {
+  color: rgba(37, 99, 235, 1);
+}
+
+.shared-social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* Right columns area */
+.shared-footer-columns {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.shared-footer-col {
+  gap: 12px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding-bottom: 44px;
+}
+
+.shared-footer-col h4 {
+  color: rgba(15, 23, 42, 1);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 20px;
+  margin: 0;
+}
+
+.shared-footer-col a {
+  color: rgba(100, 116, 139, 1);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.shared-footer-col a:hover {
+  color: rgba(37, 99, 235, 1);
+}
+
+/* ── Hamburger button (hidden on desktop) ── */
+.shared-nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 4px;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+.shared-nav-hamburger:hover { background: rgba(0,0,0,0.05); }
+.shared-nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: rgba(71, 85, 105, 1);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Animated X when open */
+#shared-navbar.nav-open .shared-nav-hamburger span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+#shared-navbar.nav-open .shared-nav-hamburger span:nth-child(2) {
+  opacity: 0;
+}
+#shared-navbar.nav-open .shared-nav-hamburger span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile nav drawer (hidden by default) ── */
+.shared-nav-mobile {
+  display: none;
+  flex-direction: column;
+  padding: 16px 24px 32px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(226, 232, 240, 0.5);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.shared-nav-mobile .shared-nav-link {
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  border-left: none;
+  transition: padding-left 0.2s ease;
+}
+.shared-nav-mobile .shared-nav-link:active {
+  background: rgba(0,0,0,0.02);
+  padding-left: 8px;
+}
+.shared-nav-mobile .shared-nav-link:last-of-type {
+  border-bottom: none;
+}
+.shared-nav-mobile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 24px;
+}
+.shared-nav-mobile-actions .shared-btn-signin {
+  display: flex !important;
+  width: 100%;
+  justify-content: center;
+  background: #f1f5f9;
+  padding: 14px;
+  border-radius: 12px;
+}
+.shared-nav-mobile-actions .shared-btn-create {
+  display: flex !important;
+  width: 100%;
+  justify-content: center;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+.shared-nav-mobile-actions button:active {
+  transform: scale(0.98);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .shared-nav-links { display: none !important; }
+  .shared-btn-signin { display: none !important; }
+  .shared-btn-create { display: none !important; }
+  .shared-nav-hamburger { display: flex !important; }
+
+  #shared-navbar.nav-open .shared-nav-mobile {
+    display: flex !important;
+  }
+
+  .shared-nav-inner { height: 52px; }
+
+  .shared-footer-inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .shared-footer-brand { width: 100%; }
+  .shared-footer-columns {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shared-nav-inner { padding: 0 16px; }
+  .shared-nav-mobile { padding: 8px 16px 20px; }
+  .shared-footer-inner { padding: 40px 20px; }
+}
